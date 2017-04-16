@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myrb="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bawei.activity.main.MainActivity">
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Frag"></FrameLayout>
+    <LinearLayout
+
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <com.bawei.view.MyRadioButton
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:id="@+id/rb_home"
+            myrb:text="首页"
+            android:gravity="center"
+            myrb:backgrounds="@mipmap/bottom_tab_home_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.bawei.view.MyRadioButton>
+
+        <com.bawei.view.MyRadioButton
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:id="@+id/rb_classify"
+            myrb:text="分类"
+            android:gravity="center"
+            myrb:backgrounds="@mipmap/bottom_tab_classify_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.bawei.view.MyRadioButton>
+        <com.bawei.view.MyRadioButton
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:id="@+id/rb_shopping"
+            myrb:text="购物车"
+            android:gravity="center"
+            myrb:backgrounds="@mipmap/bottom_tab_shopping_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.bawei.view.MyRadioButton>
+        <com.bawei.view.MyRadioButton
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/rb_user"
+            myrb:text="个人中心"
+            myrb:backgrounds="@mipmap/bottom_tab_user_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.bawei.view.MyRadioButton>
+
+    </LinearLayout>
+</LinearLayout>
